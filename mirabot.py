@@ -107,6 +107,26 @@ class MyClient(discord.Client):
                     else:
                         await interaction.response.send_message("no wiki page for that bro")
 
+        @self.tree.command(name="urban_dictionary", description="searches Urban Dictionary for a term")
+        @app_commands.allowed_contexts(guilds=True, dms=True, private_channels=True)
+        @app_commands.describe(query="The term to search for on Urban Dictionary")
+        async def urban_dictionary(interaction: discord.Interaction, query: str):
+            search_url = f"https://api.urbandictionary.com/v0/define?term={query}"
+            async with aiohttp.ClientSession() as session:
+                async with session.get(search_url) as resp:
+                    if resp.status == 200:
+                        data = await resp.json()
+                        if data["list"]:
+                            definition = data["list"][0]["definition"]
+                            example = data["list"][0]["example"]
+                            embed = discord.Embed(title=f"Definition of {query}", description=definition, color=discord.Color.dark_green())
+                            if example:
+                                embed.add_field(name="Example", value=example, inline=False)
+                            await interaction.response.send_message(embed=embed)
+                        else:
+                            await interaction.response.send_message("no definition found for that brotato")
+                    else:
+                        await interaction.response.send_message("error fetching from Urban Dictionary dawg")
 # register commands fella
         await self.tree.sync()
         print("commands registered, one hour brotato")
