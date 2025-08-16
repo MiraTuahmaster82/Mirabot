@@ -74,7 +74,7 @@ class MyClient(discord.Client):
         @self.tree.command(name="motho_special", description="alright alright alright listen listen")
         @app_commands.allowed_contexts(guilds=True, dms=True, private_channels=True)
         async def motho(interaction: discord.Interaction):
-            await interaction.response.send_message("https://cdn.discordapp.com/attachments/1019474643649835068/1406025292090179715/cachedVideo.mp4?ex=68a0f698&is=689fa518&hm=c5f321bfe92abdfd09ff1ce805cb125988284f7bf86a2dc8ec5814e9113a025e&")
+            await interaction.response.send_message("[Motho Special](https://cdn.discordapp.com/attachments/1019474643649835068/1406025292090179715/cachedVideo.mp4?ex=68a0f698&is=689fa518&hm=c5f321bfe92abdfd09ff1ce805cb125988284f7bf86a2dc8ec5814e9113a025e&)")
 
         @self.tree.command(name="me_when", description="me when i get my hands on you")
         @app_commands.allowed_contexts(guilds=True, dms=True, private_channels=True)
