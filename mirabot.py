@@ -97,12 +97,15 @@ class MyClient(discord.Client):
                     if resp.status == 200:
                         data = await resp.json()
                         title = data.get("title", "No title")
-                        extract = data.get("extract", "No summary available.")
+                        extract = data.get("extract", "No summary brah")
                         page_url = data.get("content_urls", {}).get("desktop", {}).get("page", "")
-                        message = f"**{title}**\n{extract}\n{page_url}"
-                        await interaction.response.send_message(message)
+                        thumbnail = data.get("thumbnail", {}).get("source")
+                        embed = discord.Embed(title=title, description=extract, url=page_url, color=discord.Color.dark_green())
+                        if thumbnail:
+                            embed.set_thumbnail(url=thumbnail)
+                        await interaction.response.send_message(embed=embed)
                     else:
-                        await interaction.response.send_message("no wiki page for that on foenem grave")
+                        await interaction.response.send_message("no wiki page for that bro")
 
 # register commands fella
         await self.tree.sync()
