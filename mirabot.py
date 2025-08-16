@@ -86,6 +86,24 @@ class MyClient(discord.Client):
         async def random_number(interaction: discord.Interaction):
             number = random.randint(1, 2147483647)
             await interaction.response.send_message(f"Random number generated: {int(number):,}")
+            
+        @self.tree.command(name="wikipedia", description="searches wikipedia for a term")
+        @app_commands.allowed_contexts(guilds=True, dms=True, private_channels=True)
+        @app_commands.describe(query="The term to search for on Wikipedia")
+        async def wikipedia(interaction: discord.Interaction, query: str):
+            search_url = f"https://en.wikipedia.org/api/rest_v1/page/summary/{query.replace(' ', '_')}"
+            async with aiohttp.ClientSession() as session:
+                async with session.get(search_url) as resp:
+                    if resp.status == 200:
+                        data = await resp.json()
+                        title = data.get("title", "No title")
+                        extract = data.get("extract", "No summary available.")
+                        page_url = data.get("content_urls", {}).get("desktop", {}).get("page", "")
+                        message = f"**{title}**\n{extract}\n{page_url}"
+                        await interaction.response.send_message(message)
+                    else:
+                        await interaction.response.send_message("no wiki page for that on foenem grave")
+
 # register commands fella
         await self.tree.sync()
         print("commands registered, one hour brotato")
