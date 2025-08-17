@@ -300,3 +300,92 @@
 12:17:13 [INFO ] Received from terminal: {"function": "stop", "args": []}
 12:17:13 [DEBUG] packet from bot: Function not found
 12:17:13 [INFO ] Bot stopped successfully
+12:17:50 [INFO ] Terminal opened fellow
+12:17:50 [DEBUG] localhost and port 1103
+12:17:54 [INFO ] Terminal called s with flags ['-d']
+12:17:54 [INFO ] Starting bot
+12:17:54 [INFO ] Bot started in debug mode
+12:17:55 [DEBUG] Term <-> Bot Connection open
+12:17:58 [INFO ] Terminal called stop with flags []
+12:17:58 [INFO ] Stopping bot
+12:17:58 [INFO ] Connection from Terminal
+12:18:01 [INFO ] Terminal called s with flags []
+12:18:01 [INFO ] Starting bot
+12:18:01 [INFO ] Bot Started in normal mode
+12:18:01 [DEBUG] Term <-> Bot Connection open
+12:18:28 [INFO ] Terminal called stop with flags []
+12:18:28 [INFO ] Stopping bot
+12:18:28 [INFO ] Connection from Terminal
+12:18:30 [INFO ] Terminal called start with flags ['-d']
+12:18:30 [INFO ] Starting bot
+12:18:30 [INFO ] Bot started in debug mode
+12:18:31 [DEBUG] Term <-> Bot Connection open
+12:19:14 [INFO ] Terminal called stop with flags []
+12:19:14 [INFO ] Stopping bot
+12:19:14 [INFO ] Connection from Terminal
+12:19:19 [INFO ] Terminal called s with flags ['-d']
+12:19:19 [INFO ] Starting bot
+12:19:19 [INFO ] Bot started in debug mode
+12:19:20 [DEBUG] Term <-> Bot Connection open
+12:29:02 [INFO ] Terminal called stop with flags []
+12:29:02 [INFO ] Stopping bot
+12:29:02 [INFO ] Connection from Terminal
+12:29:06 [INFO ] Terminal called s with flags []
+12:29:06 [INFO ] Starting bot
+12:29:06 [INFO ] Bot Started in normal mode
+12:29:07 [DEBUG] Term <-> Bot Connection open
+12:42:57 [INFO ] Terminal called say with flags []
+12:43:00 [INFO ] Connection from Terminal
+12:43:00 [ERROR] Error in say command: 404 Not Found (error code: 0): 404: Not Found
+12:43:00 [INFO ] Received from terminal: {"function": "say", "args": ["", ["hi"]]}
+12:43:00 [DEBUG] packet from bot: failed to send message, 404 Not Found (error code: 0): 404: Not Found
+12:43:18 [INFO ] Terminal called say with flags []
+12:43:34 [INFO ] Connection from Terminal
+12:43:34 [INFO ] Received from terminal: {"function": "say", "args": ["1277335891920031810", ["this thing on \ud83c\udfa4?"]]}
+12:43:34 [DEBUG] packet from bot: bot sayd ['this thing on 🎤?'] in 1277335891920031810
+12:56:13 [INFO ] Terminal called say with flags []
+12:56:16 [INFO ] Connection from Terminal
+12:56:17 [INFO ] Received from terminal: {"function": "say", "args": ["1277335891920031810", ["sweeet"]]}
+12:56:17 [DEBUG] packet from bot: bot sayd ['sweeet'] in 1277335891920031810
+12:59:51 [INFO ] Terminal called say with flags []
+13:01:05 [INFO ] Connection from Terminal
+13:01:06 [INFO ] Received from terminal: {"function": "say", "args": ["1277335891920031810", ["me and my friend spent like 7 hours last night creating a terminal for the bot so i can talk through the bot while also letting me run the terminal and the bot seperate.", "it's really cool actually. the bot starts when my pc turns on and runs in the background."]]}
+13:01:06 [DEBUG] packet from bot: bot sayd ['me and my friend spent like 7 hours last night creating a terminal for the bot so i can talk through the bot while also letting me run the terminal and the bot seperate.', "it's really cool actually. the bot starts when my pc turns on and runs in the background."] in 1277335891920031810
+13:01:17 [INFO ] Terminal called say with flags []
+13:01:33 [INFO ] Connection from Terminal
+13:01:33 [INFO ] Received from terminal: {"function": "say", "args": ["1277335891920031810", ["i can start, stop, and restart the bot all from this terminal"]]}
+13:01:33 [DEBUG] packet from bot: bot sayd ['i can start, stop, and restart the bot all from this terminal'] in 1277335891920031810
+13:02:24 [INFO ] Terminal called say with flags []
+13:02:35 [INFO ] Connection from Terminal
+13:02:36 [INFO ] Received from terminal: {"function": "say", "args": ["1404862856897495121", ["tony its been like hours since that previous message"]]}
+13:02:36 [DEBUG] packet from bot: bot sayd ['tony its been like hours since that previous message'] in 1404862856897495121
+13:02:53 [INFO ] Terminal called say with flags []
+13:04:22 [INFO ] Connection from Terminal
+13:04:22 [INFO ] Received from terminal: {"function": "say", "args": ["1404862856897495121", ["<@949756232997167194> read what me and my friend <@309847108444487682> did last night in <#1277335891920031810>"]]}
+13:04:22 [DEBUG] packet from bot: bot sayd ['<@949756232997167194> read what me and my friend <@309847108444487682> did last night in <#1277335891920031810>'] in 1404862856897495121
+15:36:32 [INFO ] Terminal called say with flags []
+15:37:38 [INFO ] Connection from Terminal
+15:37:38 [INFO ] Received from terminal: {"function": "say", "args": ["1024785616933769236", ["https://www.cartooncuisine.com/wp-content/uploads/2020/07/TweekCupcakesFI.jpg"]]}
+15:37:38 [DEBUG] packet from bot: bot sayd ['https://www.cartooncuisine.com/wp-content/uploads/2020/07/TweekCupcakesFI.jpg'] in 1024785616933769236
+15:39:03 [INFO ] Terminal called say with flags []
+15:39:07 [INFO ] Connection from Terminal
+15:39:07 [INFO ] Received from terminal: {"function": "say", "args": ["1024785616933769236", ["https://static.wikia.nocookie.net/southpark/images/c/ce/Alter-ego-tweek-cupcake-maker.png/revision/latest/scale-to-width-down/459?cb=20170926034844"]]}
+15:39:07 [DEBUG] packet from bot: bot sayd ['https://static.wikia.nocookie.net/southpark/images/c/ce/Alter-ego-tweek-cupcake-maker.png/revision/latest/scale-to-width-down/459?cb=20170926034844'] in 1024785616933769236
+15:40:10 [INFO ] Terminal called say with flags []
+15:40:27 [INFO ] Connection from Terminal
+15:40:28 [INFO ] Received from terminal: {"function": "say", "args": ["1024785616933769236", [">https://static.wikia.nocookie.net/southpark/images/c/ce/Alter-ego-tweek-cupcake-maker.png/revision/latest/scale-to-width-down/459?cb=20170926034844"]]}
+15:40:28 [DEBUG] packet from bot: bot sayd ['>https://static.wikia.nocookie.net/southpark/images/c/ce/Alter-ego-tweek-cupcake-maker.png/revision/latest/scale-to-width-down/459?cb=20170926034844'] in 1024785616933769236
+15:40:51 [INFO ] Terminal called say with flags []
+15:40:54 [INFO ] Connection from Terminal
+15:40:55 [INFO ] Received from terminal: {"function": "say", "args": ["1024785616933769236", ["bro"]]}
+15:40:55 [DEBUG] packet from bot: bot sayd ['bro'] in 1024785616933769236
+15:40:57 [WARN ] Command bro not found in commands.json
+15:40:57 [ERROR] error executing 'bro'
+15:41:01 [WARN ] Command sdiybt not found in commands.json
+15:41:01 [ERROR] error executing 'sdiybt'
+15:41:02 [WARN ] Command > not found in commands.json
+15:41:02 [ERROR] error executing '>'
+15:41:04 [INFO ] Terminal called say with flags []
+15:41:10 [INFO ] Connection from Terminal
+15:41:11 [INFO ] Received from terminal: {"function": "say", "args": ["1024785616933769236", ["sdiybt"]]}
+15:41:11 [DEBUG] packet from bot: bot sayd ['sdiybt'] in 1024785616933769236
