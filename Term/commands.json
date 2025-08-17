@@ -1,0 +1,39 @@
+{
+    "test": {
+        "alias": ["t", "test"],
+        "help": "Test the bot's functionality",
+        "call": "cmdtest",
+        "flags": [
+            {
+                "alias": ["-t", "-tickle"],
+                "flag": "tickle",
+                "help": "Tickle the bot to check if it's responsive"
+            }
+        ]
+    },
+    "start": {
+        "alias": ["start", "s"],
+        "help": "Start the bot",
+        "call": "cmdstartbot",
+        "flags": [
+            {
+                "alias": ["-debug", "-d"],
+                "flag": "debug",
+                "help": "no bg"
+            }
+        ]
+    },
+    "stop": {
+        "alias": ["stop", "quit", "exit"],
+        "help": "Stop the bot",
+        "call": "cmdstopbot",
+        "flags": []
+    },
+    "say": {
+        "alias": ["say", "speak", "talk"],
+        "help": "makes the boy speak",
+        "call": "cmdbotsay",
+        "flags": []
+    }
+    
+}

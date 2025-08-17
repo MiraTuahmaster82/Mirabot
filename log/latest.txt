@@ -1,0 +1,273 @@
+01:08:30 [INFO ] Terminal opened fellow
+01:08:30 [DEBUG] localhost and port 1103
+01:08:56 [INFO ] Terminal called test with flags []
+01:08:56 [WARN ] where my tickle at?
+01:09:08 [INFO ] Terminal called test with flags ['-tickle']
+01:09:08 [ERROR] failed to call function by command cmdtest: unhashable type: 'list'
+01:09:08 [ERROR] error executing 'test -tickle'
+01:09:20 [INFO ] Terminal called test with flags ['-t']
+01:09:20 [ERROR] failed to call function by command cmdtest: unhashable type: 'list'
+01:09:20 [ERROR] error executing 'test -t'
+01:11:19 [INFO ] Terminal opened fellow
+01:11:19 [DEBUG] localhost and port 1103
+01:11:27 [INFO ] Terminal called test with flags ['-tickle']
+01:11:27 [ERROR] failed to call function by command cmdtest: unhashable type: 'list'
+01:11:27 [ERROR] error executing 'test -tickle'
+01:12:09 [INFO ] Terminal opened fellow
+01:12:09 [DEBUG] localhost and port 1103
+01:12:12 [INFO ] Terminal called test with flags ['-t']
+01:12:12 [ERROR] failed to call function by command cmdtest: 'call'
+01:12:12 [ERROR] error executing 'test -t'
+01:12:16 [INFO ] Terminal called test with flags ['-tickle']
+01:12:16 [ERROR] failed to call function by command cmdtest: 'call'
+01:12:16 [ERROR] error executing 'test -tickle'
+01:14:02 [INFO ] Terminal opened fellow
+01:14:02 [DEBUG] localhost and port 1103
+01:14:06 [INFO ] Terminal called test with flags ['-t']
+01:14:06 [ERROR] TICKLE ME FELLOW
+01:14:09 [INFO ] Terminal called test with flags ['-', 'tickle']
+01:14:09 [WARN ] where my tickle at?
+01:14:16 [INFO ] Terminal called test with flags []
+01:14:16 [WARN ] where my tickle at?
+01:14:19 [INFO ] Terminal called test with flags ['-tickle']
+01:14:19 [ERROR] TICKLE ME FELLOW
+01:57:37 [INFO ] Terminal opened fellow
+01:57:37 [DEBUG] localhost and port 1103
+01:57:43 [WARN ] Command s not found in commands.json
+01:57:43 [ERROR] error executing 's -d'
+01:58:05 [WARN ] Command start not found in commands.json
+01:58:05 [ERROR] error executing 'start -d'
+02:01:11 [INFO ] Terminal opened fellow
+02:01:11 [DEBUG] localhost and port 1103
+02:01:13 [INFO ] Terminal called test with flags []
+02:01:13 [WARN ] where my tickle at?
+02:01:15 [INFO ] Terminal called test with flags ['-t']
+02:01:15 [ERROR] TICKLE ME FELLOW
+02:03:53 [INFO ] Terminal opened fellow
+02:03:53 [DEBUG] localhost and port 1103
+02:03:55 [WARN ] Command start not found in commands.json
+02:03:55 [ERROR] error executing 'start'
+02:03:59 [WARN ] Command s not found in commands.json
+02:03:59 [ERROR] error executing 's -d'
+02:04:12 [INFO ] Terminal opened fellow
+02:04:12 [DEBUG] localhost and port 1103
+02:04:15 [INFO ] Terminal called s with flags ['-d']
+02:04:15 [INFO ] Starting bot
+02:04:15 [INFO ] Bot started in debug mode
+02:04:15 [DEBUG] Term <-> Bot Connection open
+02:04:28 [WARN ] Command stp[ not found in commands.json
+02:04:28 [ERROR] error executing 'stp['
+02:04:29 [INFO ] Terminal called stop with flags []
+02:04:29 [INFO ] Stopping bot
+02:04:29 [INFO ] Connection from Terminal
+02:04:29 [ERROR] Error handling message: unsupported operand type(s) for -: 'str' and 'dict'
+02:04:29 [INFO ] Received from terminal: {"function": "stop", "args": []}
+02:04:29 [DEBUG] packet from bot: Error handling message: unsupported operand type(s) for -: 'str' and 'dict'
+02:04:29 [INFO ] Bot stopped successfully
+02:06:38 [INFO ] Terminal opened fellow
+02:06:38 [DEBUG] localhost and port 1103
+02:07:04 [INFO ] Terminal opened fellow
+02:07:04 [DEBUG] localhost and port 1103
+02:07:08 [INFO ] Terminal called start with flags ['-d']
+02:07:08 [INFO ] Starting bot
+02:07:08 [INFO ] Bot started in debug mode
+02:07:09 [DEBUG] Term <-> Bot Connection open
+02:07:24 [INFO ] Terminal called stop with flags []
+02:07:24 [INFO ] Stopping bot
+02:07:24 [INFO ] Connection from Terminal
+02:07:24 [ERROR] Error handling message: MyClient.stop() missing 1 required positional argument: 'self'
+02:07:24 [INFO ] Received from terminal: {"function": "stop", "args": []}
+02:07:24 [DEBUG] packet from bot: Error handling message: MyClient.stop() missing 1 required positional argument: 'self'
+02:07:24 [INFO ] Bot stopped successfully
+02:12:08 [INFO ] Terminal called start with flags []
+02:12:08 [INFO ] Starting bot
+02:12:08 [INFO ] Starting bot...
+02:12:09 [DEBUG] Term <-> Bot Connection open
+02:12:13 [INFO ] Terminal opened fellow
+02:12:13 [DEBUG] localhost and port 1103
+02:12:19 [INFO ] Terminal opened fellow
+02:12:19 [DEBUG] localhost and port 1103
+02:12:22 [INFO ] Terminal called start with flags ['=d']
+02:12:22 [INFO ] Starting bot
+02:12:22 [INFO ] Starting bot...
+02:12:22 [ERROR] Socket error: [WinError 10048] Only one usage of each socket address (protocol/network address/port) is normally permitted
+02:12:25 [INFO ] Terminal called start with flags ['-d']
+02:12:25 [INFO ] Starting bot
+02:12:25 [INFO ] Bot started in debug mode
+02:12:25 [ERROR] Socket error: [WinError 10048] Only one usage of each socket address (protocol/network address/port) is normally permitted
+02:12:35 [WARN ] Command sotp not found in commands.json
+02:12:35 [ERROR] error executing 'sotp'
+02:12:36 [INFO ] Terminal called stop with flags []
+02:12:36 [INFO ] Stopping bot
+02:12:36 [INFO ] Connection from Terminal
+02:12:36 [ERROR] Error handling message: unsupported operand type(s) for -: 'str' and 'dict'
+02:12:36 [INFO ] Received from terminal: {"function": "stop", "args": []}
+02:12:36 [DEBUG] packet from bot: Error handling message: unsupported operand type(s) for -: 'str' and 'dict'
+02:12:36 [INFO ] Bot stopped successfully
+02:13:23 [INFO ] Terminal opened fellow
+02:13:23 [DEBUG] localhost and port 1103
+02:13:28 [INFO ] Terminal called start with flags ['-d']
+02:13:28 [INFO ] Starting bot
+02:13:28 [INFO ] Bot started in debug mode
+02:13:28 [DEBUG] Term <-> Bot Connection open
+02:13:37 [INFO ] Terminal called stop with flags []
+02:13:37 [INFO ] Stopping bot
+02:13:37 [INFO ] Connection from Terminal
+02:13:37 [ERROR] Error handling message: unsupported operand type(s) for -: 'str' and 'dict'
+02:13:37 [INFO ] Received from terminal: {"function": "stop", "args": []}
+02:13:37 [DEBUG] packet from bot: Error handling message: unsupported operand type(s) for -: 'str' and 'dict'
+02:13:37 [INFO ] Bot stopped successfully
+02:17:23 [INFO ] Terminal opened fellow
+02:17:23 [DEBUG] localhost and port 1103
+02:17:26 [INFO ] Terminal called start with flags ['-d']
+02:17:26 [INFO ] Starting bot
+02:17:26 [INFO ] Bot started in debug mode
+02:17:26 [DEBUG] Term <-> Bot Connection open
+02:17:37 [INFO ] Terminal called stop with flags []
+02:17:37 [INFO ] Stopping bot
+02:17:37 [INFO ] Connection from Terminal
+02:33:18 [INFO ] Terminal opened fellow
+02:33:18 [DEBUG] localhost and port 1103
+02:33:22 [INFO ] Terminal called start with flags ['-d']
+02:33:22 [INFO ] Starting bot
+02:33:22 [INFO ] Bot started in debug mode
+02:33:22 [DEBUG] Term <-> Bot Connection open
+02:33:28 [INFO ] Terminal called say with flags []
+02:33:39 [INFO ] Connection from Terminal
+02:33:39 [ERROR] Error in say command: 'client' object has no attribute 'bot'
+02:33:39 [INFO ] Received from terminal: {"function": "say", "args": [["hi"]]}
+02:33:39 [DEBUG] packet from bot: failed to send message, 'client' object has no attribute 'bot'
+02:34:22 [INFO ] Terminal called stop with flags []
+02:34:22 [INFO ] Stopping bot
+02:34:22 [INFO ] Connection from Terminal
+02:34:26 [INFO ] Terminal opened fellow
+02:34:26 [DEBUG] localhost and port 1103
+02:34:29 [INFO ] Terminal called start with flags ['-d']
+02:34:29 [INFO ] Starting bot
+02:34:29 [INFO ] Bot started in debug mode
+02:34:30 [DEBUG] Term <-> Bot Connection open
+02:34:39 [INFO ] Terminal called say with flags []
+02:35:30 [INFO ] Connection from Terminal
+02:35:31 [INFO ] Received from terminal: {"function": "say", "args": [["is this thing on? \ud83c\udfa4"]]}
+02:35:31 [DEBUG] packet from bot: bot sayd ['is this thing on? 🎤']
+02:36:30 [INFO ] Terminal called stop with flags []
+02:36:30 [INFO ] Stopping bot
+02:36:30 [INFO ] Connection from Terminal
+02:38:23 [INFO ] Terminal opened fellow
+02:38:23 [DEBUG] localhost and port 1103
+02:38:33 [INFO ] Terminal called start with flags ['-d']
+02:38:33 [INFO ] Starting bot
+02:38:33 [INFO ] Bot started in debug mode
+02:38:33 [DEBUG] Term <-> Bot Connection open
+02:38:39 [INFO ] Terminal called say with flags []
+02:38:54 [WARN ] Command < not found in commands.json
+02:38:54 [ERROR] error executing '<'
+02:39:05 [WARN ] Command > not found in commands.json
+02:39:05 [ERROR] error executing '>'
+02:39:49 [INFO ] Terminal called stop with flags []
+02:39:49 [INFO ] Stopping bot
+02:39:49 [INFO ] Connection from Terminal
+02:39:55 [INFO ] Terminal opened fellow
+02:39:55 [DEBUG] localhost and port 1103
+02:39:58 [INFO ] Terminal called start with flags ['-d']
+02:39:58 [INFO ] Starting bot
+02:39:58 [INFO ] Bot started in debug mode
+02:39:58 [DEBUG] Term <-> Bot Connection open
+02:40:24 [INFO ] Terminal called say with flags []
+02:40:57 [INFO ] Connection from Terminal
+02:40:58 [INFO ] Received from terminal: {"function": "say", "args": [["<@272868546353168384> hi bro"]]}
+02:40:58 [DEBUG] packet from bot: bot sayd ['<@272868546353168384> hi bro']
+02:41:14 [INFO ] Terminal called say with flags []
+02:47:00 [INFO ] Terminal called stop with flags []
+02:47:00 [INFO ] Stopping bot
+02:47:00 [INFO ] Connection from Terminal
+02:47:04 [INFO ] Terminal opened fellow
+02:47:04 [DEBUG] localhost and port 1103
+02:47:07 [INFO ] Terminal called start with flags ['-d']
+02:47:07 [INFO ] Starting bot
+02:47:07 [INFO ] Bot started in debug mode
+02:47:08 [DEBUG] Term <-> Bot Connection open
+02:48:26 [INFO ] Terminal called say with flags []
+02:48:44 [INFO ] Connection from Terminal
+02:48:45 [INFO ] Received from terminal: {"function": "say", "args": ["1404862856897495121", ["test"]]}
+02:48:45 [DEBUG] packet from bot: bot sayd ['test'] in 1404862856897495121
+02:49:31 [INFO ] Terminal called stop with flags []
+02:49:31 [INFO ] Stopping bot
+02:49:31 [INFO ] Connection from Terminal
+02:49:43 [INFO ] Terminal opened fellow
+02:49:43 [DEBUG] localhost and port 1103
+02:49:54 [INFO ] Terminal called start with flags []
+02:49:54 [INFO ] Starting bot
+02:49:54 [INFO ] Starting bot...
+02:49:54 [DEBUG] Term <-> Bot Connection open
+02:49:58 [INFO ] Terminal called say with flags []
+02:50:04 [INFO ] Connection from Terminal
+02:50:04 [INFO ] Received from terminal: {"function": "say", "args": ["1404862856897495121", ["test 2"]]}
+02:50:04 [DEBUG] packet from bot: bot sayd ['test 2'] in 1404862856897495121
+02:50:11 [INFO ] Terminal called stop with flags []
+02:50:11 [INFO ] Stopping bot
+02:50:11 [INFO ] Connection from Terminal
+02:55:54 [INFO ] Terminal opened fellow
+02:55:54 [DEBUG] localhost and port 1103
+02:56:00 [INFO ] Terminal called start with flags []
+02:56:00 [INFO ] Starting bot
+02:56:00 [INFO ] Starting bot...
+02:56:00 [DEBUG] Term <-> Bot Connection open
+02:56:39 [INFO ] Terminal called stop with flags []
+02:56:39 [INFO ] Stopping bot
+02:56:39 [INFO ] Connection from Terminal
+02:56:42 [INFO ] Terminal opened fellow
+02:56:42 [DEBUG] localhost and port 1103
+02:56:51 [INFO ] Terminal called start with flags []
+02:56:51 [INFO ] Starting bot
+02:56:51 [INFO ] Bot Started in normal mode
+02:56:51 [DEBUG] Term <-> Bot Connection open
+02:57:28 [INFO ] Terminal called say with flags []
+02:57:49 [INFO ] Connection from Terminal
+02:57:50 [INFO ] Received from terminal: {"function": "say", "args": ["1406538450412507156", ["https://www.youtube.com/watch?v=jNQXAC9IVRw"]]}
+02:57:50 [DEBUG] packet from bot: bot sayd ['https://www.youtube.com/watch?v=jNQXAC9IVRw'] in 1406538450412507156
+03:00:35 [INFO ] Terminal called say with flags []
+03:01:20 [INFO ] Connection from Terminal
+03:01:21 [INFO ] Received from terminal: {"function": "say", "args": ["1406538450412507156", ["<@522605224981037059> hi finn", "say hi finn", "finn", "say hi"]]}
+03:01:21 [DEBUG] packet from bot: bot sayd ['<@522605224981037059> hi finn', 'say hi finn', 'finn', 'say hi'] in 1406538450412507156
+03:01:46 [INFO ] Terminal opened fellow
+03:01:46 [DEBUG] localhost and port 1103
+03:01:48 [INFO ] Terminal called say with flags []
+03:02:05 [INFO ] Connection from Terminal
+03:02:06 [INFO ] Received from terminal: {"function": "say", "args": ["1406538450412507156", ["<@323239063421452288> hi hollow"]]}
+03:02:06 [DEBUG] packet from bot: bot sayd ['<@323239063421452288> hi hollow'] in 1406538450412507156
+03:03:26 [INFO ] Terminal called say with flags []
+03:03:29 [INFO ] Connection from Terminal
+03:03:29 [ERROR] Error in say command: 403 Forbidden (error code: 50001): Missing Access
+03:03:29 [INFO ] Received from terminal: {"function": "say", "args": ["1194039040442368060", ["hi"]]}
+03:03:29 [DEBUG] packet from bot: failed to send message, 403 Forbidden (error code: 50001): Missing Access
+03:04:00 [INFO ] Terminal called say with flags []
+03:04:02 [INFO ] Connection from Terminal
+03:04:03 [INFO ] Received from terminal: {"function": "say", "args": ["1382778472237105225", ["hi"]]}
+03:04:03 [DEBUG] packet from bot: bot sayd ['hi'] in 1382778472237105225
+03:07:46 [INFO ] Terminal called say with flags []
+03:07:59 [INFO ] Connection from Terminal
+03:07:59 [INFO ] Received from terminal: {"function": "say", "args": ["1404862856897495121", ["<@949756232997167194> hi bro"]]}
+03:07:59 [DEBUG] packet from bot: bot sayd ['<@949756232997167194> hi bro'] in 1404862856897495121
+03:12:00 [INFO ] Terminal called stop with flags []
+03:12:00 [INFO ] Stopping bot
+03:12:00 [INFO ] Connection from Terminal
+03:12:08 [INFO ] Terminal opened fellow
+03:12:08 [DEBUG] localhost and port 1103
+03:12:13 [INFO ] Terminal called start with flags []
+03:12:13 [INFO ] Starting bot
+03:12:13 [INFO ] Bot Started in normal mode
+03:12:13 [DEBUG] Term <-> Bot Connection open
+03:12:17 [INFO ] Terminal called say with flags []
+03:12:24 [INFO ] Connection from Terminal
+03:12:24 [ERROR] Error in say command: 404 Not Found (error code: 0): 404: Not Found
+03:12:24 [INFO ] Received from terminal: {"function": "say", "args": ["", ["hi"]]}
+03:12:24 [DEBUG] packet from bot: failed to send message, 404 Not Found (error code: 0): 404: Not Found
+03:12:32 [INFO ] Terminal called say with flags []
+03:12:41 [INFO ] Connection from Terminal
+03:12:41 [INFO ] Received from terminal: {"function": "say", "args": ["1404862856897495121", ["hi tony"]]}
+03:12:41 [DEBUG] packet from bot: bot sayd ['hi tony'] in 1404862856897495121
+03:12:44 [INFO ] Terminal called say with flags []
+03:12:48 [INFO ] Connection from Terminal
+03:12:48 [INFO ] Received from terminal: {"function": "say", "args": ["1404862856897495121", ["how are you"]]}
+03:12:48 [DEBUG] packet from bot: bot sayd ['how are you'] in 1404862856897495121
