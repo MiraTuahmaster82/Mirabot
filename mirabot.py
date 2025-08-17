@@ -1,5 +1,5 @@
 # imports fella
-import discord, os, random, threading, dotenv, socket, file, log, json, asyncio
+import discord, os, random, threading, dotenv, socket, file, log, json, asyncio, aiohttp
 from dotenv import load_dotenv
 from discord import app_commands
 
@@ -15,7 +15,6 @@ class client(discord.Client):
         self.tree = app_commands.CommandTree(self)
 #start commands fella
     async def setup_hook(self):
-        import aiohttp
         @self.tree.command(name="cat", description="Sends a random cat image")
         @app_commands.allowed_contexts(guilds=True, dms=True, private_channels=True)
         @app_commands.user_install()
