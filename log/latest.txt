@@ -271,3 +271,32 @@
 03:12:48 [INFO ] Connection from Terminal
 03:12:48 [INFO ] Received from terminal: {"function": "say", "args": ["1404862856897495121", ["how are you"]]}
 03:12:48 [DEBUG] packet from bot: bot sayd ['how are you'] in 1404862856897495121
+03:18:14 [INFO ] Terminal called say with flags []
+03:18:30 [INFO ] Connection from Terminal
+03:18:31 [INFO ] Received from terminal: {"function": "say", "args": ["1024785616933769236", ["test test test testicle testies"]]}
+03:18:31 [DEBUG] packet from bot: bot sayd ['test test test testicle testies'] in 1024785616933769236
+12:15:28 [INFO ] Terminal opened fellow
+12:15:28 [DEBUG] localhost and port 1103
+12:15:30 [INFO ] Terminal called stop with flags []
+12:15:30 [INFO ] Stopping bot
+12:15:30 [INFO ] Connection from Terminal
+12:15:47 [INFO ] Terminal opened fellow
+12:15:47 [DEBUG] localhost and port 1103
+12:15:50 [INFO ] Terminal called start with flags ['-d']
+12:15:50 [INFO ] Starting bot
+12:15:50 [INFO ] Bot started in debug mode
+12:15:51 [DEBUG] Term <-> Bot Connection open
+12:17:10 [INFO ] Terminal called stop with flags []
+12:17:10 [INFO ] Stopping bot
+12:17:10 [INFO ] Connection from Terminal
+12:17:10 [WARN ] No stop
+12:17:10 [INFO ] Received from terminal: {"function": "stop", "args": []}
+12:17:10 [DEBUG] packet from bot: Function not found
+12:17:10 [INFO ] Bot stopped successfully
+12:17:13 [INFO ] Terminal called exit with flags []
+12:17:13 [INFO ] Stopping bot
+12:17:13 [INFO ] Connection from Terminal
+12:17:13 [WARN ] No stop
+12:17:13 [INFO ] Received from terminal: {"function": "stop", "args": []}
+12:17:13 [DEBUG] packet from bot: Function not found
+12:17:13 [INFO ] Bot stopped successfully

@@ -129,7 +129,7 @@ class client(discord.Client):
         await self.tree.sync()
 #end commands fella
     async def on_ready(self):
-        print("Signed in as the bot")
+        print("Signed in as {self.user}")
         
     def stop(self, *args) -> str:
         stopThread = threading.Thread(target=stopBot)
