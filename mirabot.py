@@ -2,7 +2,6 @@
 import discord, os, random, threading, dotenv, socket, file, log, json, asyncio, commands
 from dotenv import load_dotenv
 from discord import app_commands
-import botcommands
 
 load_dotenv()
 TOKEN = os.getenv('DISCORD_BOT_TOKEN')
@@ -14,18 +13,13 @@ class client(discord.Client):
     def __init__(self, *, intents):
         super().__init__(intents=intents)
         self.tree = app_commands.CommandTree(self)
-<<<<<<< HEAD
-    
-        await self.tree.sync()
-=======
 #start commands fella
     async def setup_hook(self):
         await commands.setup_hook(self)
->>>>>>> aa73af9491233380f35fe7875c9a13eebbeffb2e
 #end commands fella
     async def on_ready(self):
-        print(f"Signed in as {self.user}")
-
+        print("Signed in as {self.user}")
+        
     def stop(self, *args) -> str:
         stopThread = threading.Thread(target=stopBot)
         stopThread.start()
