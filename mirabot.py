@@ -3,7 +3,6 @@ import discord
 import os
 import random
 from dotenv import load_dotenv
-from discord.ext import commands
 from discord import app_commands
 
 load_dotenv()
