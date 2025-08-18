@@ -18,7 +18,7 @@ class client(discord.Client):
         await commands.setup_hook(self)
 #end commands fella
     async def on_ready(self):
-        print("Signed in as {self.user}")
+        print(f"Signed in as {self.user}")
         
     def stop(self, *args) -> str:
         stopThread = threading.Thread(target=stopBot)
