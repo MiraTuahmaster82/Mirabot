@@ -24,7 +24,7 @@
         ]
     },
     "stop": {
-        "alias": ["stop", "quit", "exit"],
+        "alias": ["stop", "quit", "exit", "cease", "e", "q"],
         "help": "Stop the bot",
         "call": "cmdstopbot",
         "flags": []

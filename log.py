@@ -23,14 +23,8 @@ class LogUtils:
 				f.write(formatted+'\n')
 		return formatted
 
-# This helps me not copy pasting this a bunch
-# There is not really a point to this, but its fine
 def _log(level:str, message:str) -> str:
 	return LogUtils._print(level, message)
-
-
-# Other log types can easily be added
-# But i dont see a need to
 
 def error(message:str) -> str:
 	"""Prints to both console and log."""
