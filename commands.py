@@ -115,5 +115,21 @@ async def setup_hook(bot):
 	@app_commands.allowed_contexts(guilds=True, dms=True, private_channels=True)
 	async def hi(interaction: discord.Interaction):
 		await interaction.response.send_message("Hi")
+
+	@bot.tree.command(name="rat", description="Sends a random rat image")
+	@app_commands.allowed_contexts(guilds=True, dms=True, private_channels=True)
+	async def rat(interaction: discord.Interaction):
+		url = "https://api.unsplash.com/photos/random?query=rat&client_id=t02GE65OAnIHjKWGuB0LLpHmmtgq0NwBybur6CFKECA"
+		async with aiohttp.ClientSession() as session:
+			async with session.get(url) as resp:
+				if resp.status == 200:
+					data = await resp.json()
+					image_url = data.get("urls", {}).get("regular")
+					if image_url:
+						await interaction.response.send_message(image_url)
+					else:
+						await interaction.response.send_message("no rat rn sorry")
+				else:
+					await interaction.response.send_message("no rat rn sorry")
 # register commands fella
 	await bot.tree.sync()
