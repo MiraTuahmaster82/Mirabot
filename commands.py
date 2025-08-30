@@ -110,9 +110,10 @@ async def setup_hook(bot):
 						await interaction.response.send_message("no definition found for that brotato")
 				else:
 					await interaction.response.send_message("error fetching from Urban Dictionary dawg")
+	
 	@bot.tree.command(name="hi", description="says hi")
 	@app_commands.allowed_contexts(guilds=True, dms=True, private_channels=True)
-	async def hi(interaction discord.Iteraction):
+	async def hi(interaction: discord.Interaction):
 		await interaction.response.send_message("Hi")
 # register commands fella
 	await bot.tree.sync()
