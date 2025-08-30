@@ -1,4 +1,4 @@
-import discord, random, aiohttp
+import discord, random, aiohttp, certifi
 from discord import app_commands
 
 async def setup_hook(bot):
@@ -116,11 +116,13 @@ async def setup_hook(bot):
 	async def hi(interaction: discord.Interaction):
 		await interaction.response.send_message("Hi")
 
-	@bot.tree.command(name="rat", description="Sends a random rat image")
+	@bot.tree.command(name="rat", description="Sends a random rat image (50 per hour)")
 	@app_commands.allowed_contexts(guilds=True, dms=True, private_channels=True)
 	async def rat(interaction: discord.Interaction):
+		import ssl
+		ssl_context = ssl.create_default_context(cafile=certifi.where())
 		url = "https://api.unsplash.com/photos/random?query=rat&client_id=t02GE65OAnIHjKWGuB0LLpHmmtgq0NwBybur6CFKECA"
-		async with aiohttp.ClientSession() as session:
+		async with aiohttp.ClientSession(connector=aiohttp.TCPConnector(ssl=ssl_context)) as session:
 			async with session.get(url) as resp:
 				if resp.status == 200:
 					data = await resp.json()
@@ -131,5 +133,6 @@ async def setup_hook(bot):
 						await interaction.response.send_message("no rat rn sorry")
 				else:
 					await interaction.response.send_message("no rat rn sorry")
+					
 # register commands fella
 	await bot.tree.sync()
