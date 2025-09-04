@@ -133,6 +133,24 @@ async def setup_hook(bot):
 						await interaction.response.send_message("no rat rn sorry")
 				else:
 					await interaction.response.send_message("no rat rn sorry")
-					
+
+	@bot.tree.command(name="possum", description="Sends a random possum image (50 per hour)")
+	@app_commands.allowed_contexts(guilds=True, dms=True, private_channels=True)
+	async def possum(interaction: discord.Interaction):
+		import ssl
+		ssl_context = ssl.create_default_context(cafile=certifi.where())
+		url = "https://api.unsplash.com/photos/random?query=possum&client_id=t02GE65OAnIHjKWGuB0LLpHmmtgq0NwBybur6CFKECA"
+		async with aiohttp.ClientSession(connector=aiohttp.TCPConnector(ssl=ssl_context)) as session:
+			async with session.get(url) as resp:
+				if resp.status == 200:
+					data = await resp.json()
+					image_url = data.get("urls", {}).get("regular")
+					if image_url:
+						await interaction.response.send_message(image_url)
+					else:
+						await interaction.response.send_message("no possum rn sorry")
+				else:
+					await interaction.response.send_message("no possum rn sorry")
+
 # register commands fella
 	await bot.tree.sync()
